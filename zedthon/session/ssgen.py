@@ -66,7 +66,7 @@ def telethon_session():
             try:
                 zthon.send_message(
                     "me",
-                    f"**- هـذا هو كـود سيشـن تيليثـون الخـاص بـك ☑️**:\n\n`{zthon.session.save()}`\n\n**- لا تشـارك هـذا الكـود مع اي احـد ⚠️؟!**\n**- فقـط قم بنسخـه ولصقـه في مربعـات التنصيب 🛃**\n\n**- سـورس زدثــون : @ZedThon**",
+                    f"**- هـذا هو كـود سيشـن تيليثـون الخـاص بـك ☑️**:\n\n`{zthon.session.save()}`\n\n**- لا تشـارك هـذا الكـود مع اي احـد ⚠️؟!**\n**- فقـط قم بنسخـه ولصقـه في مربعـات التنصيب 🛃**\n\n**- سـورس ساره : @xsara_v**",
                 )
                 print(
                     "Your SESSION has been generated. Check your Telegram saved messages!"
@@ -90,7 +90,7 @@ def telethon_session():
     except Exception as er:
         print("Unexpected Error Occurred while Creating Session")
         print(er)
-        print("If you think It as a Bug, Report to @zzzzzl1l\n\n")
+        print("If you think It as a Bug, Report to @zxsara_v\n\n")
 
 
 def pyro_session():

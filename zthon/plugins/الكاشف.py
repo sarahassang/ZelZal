@@ -1,5 +1,5 @@
-#𝙕𝙚𝙙𝙏𝙝𝙤𝙣 ®
-#الملـف حقـوق وكتابـة زلـزال الهيبـه ⤶ @zzzzl1l خاص بسـورس ⤶ 𝙕𝙚𝙙𝙏𝙝𝙤𝙣
+#𝑆𝙚𝙙𝙏𝙝𝙤𝙣 ®
+#الملـف حقـوق وكتابـة زلـزال الهيبـه ⤶ @xsara_v خاص بسـورس ⤶ 𝑆𝙚𝙙𝙏𝙝𝙤𝙣
 #الملف مرفـوع ع استضـافتـي مهمـا خمطت راح تطلـع حقـــوقــي بســورســـك
 #هههههههههههههههههه
 
@@ -20,7 +20,7 @@ plugin_category = "البحث"
 
 
 ZelzalPH_cmd = (
-    "𓆩 [𝗦𝗼𝘂𝗿𝗰𝗲 𝗭𝗘𝗗𝗧𝗵𝗼𝗻 𝗖𝗼𝗻𝗳𝗶𝗴 📲 - كـاشـف الارقـام العربيــة](t.me/ZEDthon) 𓆪\n\n"
+    "𓆩 [𝗦𝗼𝘂𝗿𝗰𝗲 𝗭𝗘𝗗𝗧𝗵𝗼𝗻 𝗖𝗼𝗻𝗳𝗶𝗴 📲 - كـاشـف الارقـام العربيــة](t.me/xsara_v) 𓆪\n\n"
     "**⪼ الامــر ↵**\n\n"
     "⪼ `.كاشف` + اسـم الدولـة + الـرقـم بـدون مفتـاح الـدولة\n\n"
     "**⪼ الوصـف :**\n"
@@ -31,7 +31,7 @@ ZelzalPH_cmd = (
     "`.كاشف الامارات 43171234` \n\n"
     "**الامـر يدعـم الـدول التـاليـة ↵** 🇾🇪🇸🇦🇦🇪🇰🇼🇶🇦🇧🇭🇴🇲 \n\n"
     "🛃 سيتـم اضـافة المزيـد من الدول قريبـاً\n\n"
-    "\n𓆩 [𐇮 𝙕𝞝𝙇𝙕𝘼𝙇 الهہـيـٖ͡ـ͢ـبـه 𐇮](t.me/zzzzl1l) 𓆪"
+    "\n𓆩 [𐇮 𝑆𝞝𝙇𝑆𝘼𝙇 الهہـيـٖ͡ـ͢ـبـه 𐇮](t.me/xsara_v) 𓆪"
 )
 
 
@@ -58,7 +58,7 @@ async def _(event):
             event, "**╮ . كـاشف الاࢪقـام الـ؏ـࢪبيـة 📲.. اࢪسـل** `.الكاشف` **للتعليـمات 𓅫╰**"
         )
     chat = "@Zelzalybot"
-    zzzzl1l = await edit_or_reply(event, "**╮•⎚ جـارِ الكـشف ؏ــن الـرقـم  📲 ⌭ . . .**")
+    xsara_v = await edit_or_reply(event, "**╮•⎚ جـارِ الكـشف ؏ــن الـرقـم  📲 ⌭ . . .**")
     async with event.client.conversation(chat) as conv:
         try:
             response = conv.wait_event(
@@ -68,12 +68,12 @@ async def _(event):
             response = await response
             await event.client.send_read_acknowledge(conv.chat_id)
         except YouBlockedUserError:
-            await zzzzl1l.edit("**╮•⎚ تحـقق من انـك لم تقـم بحظر البوت @Zelzalybot .. ثم اعـد استخدام الامـر ...🤖♥️**")
+            await xsara_v.edit("**╮•⎚ تحـقق من انـك لم تقـم بحظر البوت @Zelzalybot .. ثم اعـد استخدام الامـر ...🤖♥️**")
             return
         if response.text.startswith("I can't find that"):
-            await zzzzl1l.edit("**╮•⎚ عـذراً .. لـم استطـع ايجـاد المطلـوب ☹️💔**")
+            await xsara_v.edit("**╮•⎚ عـذراً .. لـم استطـع ايجـاد المطلـوب ☹️💔**")
         else:
-            await zzzzl1l.delete()
+            await xsara_v.delete()
             await event.client.send_message(event.chat_id, response.message)
 
 

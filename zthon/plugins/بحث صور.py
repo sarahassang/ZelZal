@@ -1,7 +1,7 @@
 # Zed-Thon - ZelZal
 # Copyright (C) 2022 Zedthon . All Rights Reserved
 #
-# This file is a part of < https://github.com/Zed-Thon/ZelZal/ >
+# This file is a part of < https://github.com/sarahassang/ZelZal/ >
 # PLease read the GNU Affero General Public License in
 # <https://www.github.com/Zed-Thon/ZelZal/blob/master/LICENSE/>.
 

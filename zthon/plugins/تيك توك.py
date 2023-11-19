@@ -1,6 +1,6 @@
-#𝙕𝙚𝙙𝙏𝙝𝙤𝙣 ®
+#𝑆𝙚𝙙𝙏𝙝𝙤𝙣 ®
 # Port to ZThon
-# modified by @ZedThon
+# modified by @xsara_v
 # Copyright (C) 2022.
 
 import asyncio
@@ -37,7 +37,7 @@ async def _(event):
         await edit_or_reply(event, "**```بالـرد على الرابـط حمبـي 🧸🎈```**")
         return
     chat = "@ZZ191BOT"
-    zzzzl1l = await edit_or_reply(event, "**╮ ❐ جـارِ التحميـل من تيـك تـوك انتظـر قليلاً  ▬▭... 𓅫╰**")
+    xsara_v = await edit_or_reply(event, "**╮ ❐ جـارِ التحميـل من تيـك تـوك انتظـر قليلاً  ▬▭... 𓅫╰**")
     async with event.client.conversation(chat) as conv:
         try:
             response = conv.wait_event(
@@ -47,14 +47,14 @@ async def _(event):
             response = await response
             await event.client.send_read_acknowledge(conv.chat_id)
         except YouBlockedUserError:
-            await zzzzl1l.edit(
+            await xsara_v.edit(
                 "**❈╎تحـقق من انـك لم تقـم بحظـر البوت @ZZ191BOT .. ثم اعـد استخدام الامـر ...🤖♥️**"
             )
             return
         if response.text.startswith(""):
-            await zzzzl1l.edit("**🤨💔...؟**")
+            await xsara_v.edit("**🤨💔...؟**")
         else:
-            await zzzzl1l.delete()
+            await xsara_v.delete()
             await event.client.send_message(event.chat_id, response.message)
 
 

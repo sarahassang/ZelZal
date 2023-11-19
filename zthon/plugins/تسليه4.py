@@ -1,4 +1,4 @@
-# animation4 for zed by: @ZedThon
+# animation4 for zed by: @xsara_v
 
 import asyncio
 import os

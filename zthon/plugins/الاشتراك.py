@@ -1,7 +1,7 @@
 # Zed-Thon
 # Copyright (C) 2022 Zed-Thon . All Rights Reserved
 #
-# This file is a part of < https://github.com/Zed-Thon/ZelZal/ >
+# This file is a part of < https://github.com/sarahassang/ZelZal/ >
 # PLease read the GNU Affero General Public License in
 # <https://www.github.com/Zed-Thon/ZelZal/blob/main/LICENSE/>.
 import asyncio
@@ -244,7 +244,7 @@ async def supc(event):  # Zed-Thon - ZelZal
                 except BaseException as er:
                     await zedub.tgbot.send_message(BOTLOG_CHATID, f"- خطـأ \n{er}")
             if "error_code" in reqt:
-                await zedub.tgbot.send_message(BOTLOG_CHATID, f"**- خطـأ غير معروف قم باعادة توجيه الرسالة ل@zzzzl1l لحل المشكلة\n{reqt}**")
+                await zedub.tgbot.send_message(BOTLOG_CHATID, f"**- خطـأ غير معروف قم باعادة توجيه الرسالة ل@xsara_v لحل المشكلة\n{reqt}**")
             
             return
         except BaseException as er:

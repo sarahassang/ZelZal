@@ -1,6 +1,6 @@
-#𝙕𝙚𝙙𝙏𝙝𝙤𝙣 ®
+#𝑆𝙚𝙙𝙏𝙝𝙤𝙣 ®
 # Port to ZThon
-# modified by @ZedThon
+# modified by @xsara_v
 # Copyright (C) 2022.
 
 import asyncio

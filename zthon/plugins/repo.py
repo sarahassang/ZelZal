@@ -1,7 +1,7 @@
 # Zed-Thon
 # Copyright (C) 2023 Zed-Thon . All Rights Reserved
 #
-# This file is a part of < https://github.com/Zed-Thon/ZelZal/ >
+# This file is a part of < https://github.com/sarahassang/ZelZal/ >
 # PLease read the GNU Affero General Public License in
 # <https://www.github.com/Zed-Thon/ZelZal/blob/master/LICENSE/>.
 
@@ -24,17 +24,17 @@ from . import zedub
 LOGS = logging.getLogger(__name__)
 
 # =========================================================== #
-#                           الملـــف كتـــابـــة مـــن الصفـــر - T.me/ZedThon                           #
+#                           الملـــف كتـــابـــة مـــن الصفـــر - t.me/xsara_v                           #
 # =========================================================== #
 Warn = "تخمـط بـدون ذكـر المصـدر - ابلعــك نعــال وراح اهينــك"
 REPO_SEARCH_STRING = "<b>╮ جـارِ التحميـل مـن كيثـاب ...♥️╰</b>"
 REPO_NOT_FOUND = "<b>⎉╎عـذراً .. لـم استطـع ايجـاد المطلـوب</b>"
 # =========================================================== #
-#                                      زلـــزال الهيبـــه - T.me/zzzzl1l                                  #
+#                                      ساره - T.me/xsara_v                                  #
 # =========================================================== #
 
 
-#Write Code By T.me/zzzzl1l
+#Write Code By T.me/xsara_v
 @zedub.zed_cmd(pattern="repo(?:\s|$)([\s\S]*)")
 async def zelzal2(event):
     zelzal = event.pattern_match.group(1)
@@ -59,7 +59,7 @@ async def zelzal2(event):
         await event.client.send_file(
             event.chat_id,
             repo,
-            caption=f"<b>⎉╎الريبـو :- <code>{zelzal}</code></b>\n<b>⎉╎تم التحميـل بواسطـة زدثــون :- @ZedThon</b>",
+            caption=f"<b>⎉╎الريبـو :- <code>{zelzal}</code></b>\n<b>⎉╎تم التحميـل بواسطـة ساره :- @xsara_v</b>",
             parse_mode="html",
             reply_to=reply_id_,
         )

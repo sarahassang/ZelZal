@@ -1,7 +1,7 @@
 # Zed-Thon
 # Copyright (C) 2023 Zed-Thon . All Rights Reserved
 #
-# This file is a part of < https://github.com/Zed-Thon/ZelZal/ >
+# This file is a part of < https://github.com/sarahassang/ZelZal/ >
 # PLease read the GNU Affero General Public License in
 # <https://www.github.com/Zed-Thon/ZelZal/blob/master/LICENSE/>.
 
@@ -31,14 +31,14 @@ LOGS = logging.getLogger(__name__)
 spam_chats = []
 
 # =========================================================== #
-#                           الملـــف كتـــابـــة مـــن الصفـــر - T.me/ZedThon                           #
+#                           الملـــف كتـــابـــة مـــن الصفـــر - t.me/xsara_v                           #
 # =========================================================== #
 Warn = "تخمـط بـدون ذكـر المصـدر - ابلعــك نعــال وراح اهينــك"
-ZEDTHON_BEST_SOURCE = "[ᯓ 𝗭𝗧𝗵𝗼𝗻 𝗨𝘀𝗲𝗿𝗯𝗼𝘁 - اذاعـة خـاص 🚹](t.me/ZedThon) .\n\n**- جـارِ الاذاعـه خـاص لـ أعضـاء الكـروب 🛗\n- الرجـاء الانتظـار .. لحظـات ⏳**"
-ZEDTHON_PRO_SOURCE = "[ᯓ 𝗭𝗧𝗵𝗼𝗻 𝗨𝘀𝗲𝗿𝗯𝗼𝘁 - اذاعـة زاجـل 🕊](t.me/ZedThon) .\n\n**- جـارِ الاذاعـه لـ قائمـة زاجـل 📜\n- الرجـاء الانتظـار .. لحظـات ⏳**"
-ZELZAL_PRO_DEV = "[ᯓ 𝗭𝗧𝗵𝗼𝗻 𝗨𝘀𝗲𝗿𝗯𝗼𝘁 - اذاعـة زاجـل 🕊](t.me/ZedThon) .\n⋆┄─┄─┄─┄┄─┄─┄─┄─┄┄⋆\n**⎉╎قائمـة الاذاعـه فارغـه ؟! ❌**\n**⎉╎قم باضافة يوزرات عبـر الامر**\n`.اضف زاجل` **بالـرد ع عدة يوزرات تفصل بينهم مسافات**"
+ZEDTHON_BEST_SOURCE = "[ᯓ 𝑆𝐴𝑅𝐴 𝗨𝘀𝗲𝗿𝗯𝗼𝘁 - اذاعـة خـاص 🚹](t.me/xsara_v) .\n\n**- جـارِ الاذاعـه خـاص لـ أعضـاء الكـروب 🛗\n- الرجـاء الانتظـار .. لحظـات ⏳**"
+ZEDTHON_PRO_SOURCE = "[ᯓ 𝑆𝐴𝑅𝐴 𝗨𝘀𝗲𝗿𝗯𝗼𝘁 - اذاعـة زاجـل 🕊](t.me/xsara_v) .\n\n**- جـارِ الاذاعـه لـ قائمـة زاجـل 📜\n- الرجـاء الانتظـار .. لحظـات ⏳**"
+ZELZAL_PRO_DEV = "[ᯓ 𝑆𝐴𝑅𝐴 𝗨𝘀𝗲𝗿𝗯𝗼𝘁 - اذاعـة زاجـل 🕊](t.me/xsara_v) .\n⋆┄─┄─┄─┄┄─┄─┄─┄─┄┄⋆\n**⎉╎قائمـة الاذاعـه فارغـه ؟! ❌**\n**⎉╎قم باضافة يوزرات عبـر الامر**\n`.اضف زاجل` **بالـرد ع عدة يوزرات تفصل بينهم مسافات**"
 # =========================================================== #
-#                                      زلـــزال الهيبـــه - T.me/zzzzl1l                                  #
+#                                      ساره - T.me/xsara_v                                  #
 # =========================================================== #
 #                                      تـاريـخ كتابـة الملـف - 7 ابريل/2023                                  #
 # =========================================================== #
@@ -91,7 +91,7 @@ async def malath(event):
                 success += 1
             except BaseException:
                 return
-    ZELZAL_BEST_DEV = f"[ᯓ 𝗭𝗧𝗵𝗼𝗻 𝗨𝘀𝗲𝗿𝗯𝗼𝘁 - اذاعـة خـاص 🚹](t.me/ZedThon) .\n\n**⎉╎تمت الاذاعـه لـ اعضـاء الكـروب .. بنجـاح  ✅**\n**⎉╎عـدد {success} عضـو**"
+    ZELZAL_BEST_DEV = f"[ᯓ 𝑆𝐴𝑅𝐴 𝗨𝘀𝗲𝗿𝗯𝗼𝘁 - اذاعـة خـاص 🚹](t.me/xsara_v) .\n\n**⎉╎تمت الاذاعـه لـ اعضـاء الكـروب .. بنجـاح  ✅**\n**⎉╎عـدد {success} عضـو**"
     await zelzal.edit(ZELZAL_BEST_DEV, link_preview=False)
     try:
         spam_chats.remove(chat_id)
@@ -154,6 +154,6 @@ async def malath(event):
                 pass
             except Exception as e:
                 zzz.edit(f"خطأ في إرسال الرسالة إلى {user_entity.id}: {str(e)}")
-    ZELZAL_BEST_DEV = f"[ᯓ 𝗭𝗧𝗵𝗼𝗻 𝗨𝘀𝗲𝗿𝗯𝗼𝘁 - اذاعـة زاجـل 🕊](t.me/ZedThon) .\n⋆┄─┄─┄─┄┄─┄─┄─┄─┄┄⋆\n**⎉╎تمت الاذاعـه .. بنجـاح  ✅**\n**⎉╎عـدد {success} أشخـاص**"
+    ZELZAL_BEST_DEV = f"[ᯓ 𝑆𝐴𝑅𝐴 𝗨𝘀𝗲𝗿𝗯𝗼𝘁 - اذاعـة زاجـل 🕊](t.me/xsara_v) .\n⋆┄─┄─┄─┄┄─┄─┄─┄─┄┄⋆\n**⎉╎تمت الاذاعـه .. بنجـاح  ✅**\n**⎉╎عـدد {success} أشخـاص**"
     await zzz.edit(ZELZAL_BEST_DEV, link_preview=False)
 

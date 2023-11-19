@@ -27,9 +27,9 @@ async def _(event):
     type_of_group = event.pattern_match.group(1)
     group_name = event.pattern_match.group(2)
     if type_of_group == "قناه":
-        descript = "**⎉╎هـذه القنـاة تم إنشائهـا بواسطـة .. زدثــون™**"
+        descript = "**⎉╎هـذه القنـاة تم إنشائهـا بواسطـة .. ساره™**"
     else:
-        descript = "**⎉╎هـذا المجمـوعـه تم إنشائهـا بواسطـة .. زدثــون™**"
+        descript = "**⎉╎هـذا المجمـوعـه تم إنشائهـا بواسطـة .. ساره™**"
     if type_of_group == "كروب":
         try:
             result = await event.client(

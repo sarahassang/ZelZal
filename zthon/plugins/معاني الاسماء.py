@@ -1,6 +1,6 @@
-#𝙕𝙚𝙙𝙏𝙝𝙤𝙣 ®
+#𝑆𝙚𝙙𝙏𝙝𝙤𝙣 ®
 # Port to ZThon
-# modified by @ZedThon
+# modified by @xsara_v
 # Copyright (C) 2022.
 
 import asyncio
@@ -34,7 +34,7 @@ async def _(event):
             event, "**╮ .معاني + الاسـم ... للبحـث عن معانـي الاسمـاء ...𓅫╰**"
         )
     chat = "@zzznambot"
-    zzzzl1l = await edit_or_reply(event, "**╮•⎚ جـارِ البحـث عـن معنـى الاسـم ... 🧸🎈**")
+    xsara_v = await edit_or_reply(event, "**╮•⎚ جـارِ البحـث عـن معنـى الاسـم ... 🧸🎈**")
     async with event.client.conversation(chat) as conv:
         try:
             response = conv.wait_event(
@@ -44,11 +44,11 @@ async def _(event):
             responses = await response
             await event.client.send_read_acknowledge(conv.chat_id)
         except YouBlockedUserError:
-            await zzzzl1l.edit("**╮•⎚ تحـقق من انـك لم تقـم بحظر البوت @zzznambot .. ثم اعـد استخدام الامـر ...🤖♥️**")
+            await xsara_v.edit("**╮•⎚ تحـقق من انـك لم تقـم بحظر البوت @zzznambot .. ثم اعـد استخدام الامـر ...🤖♥️**")
             return
         if response.text.startswith("I can't find that"):
-            await zzzzl1l.edit("**╮•⎚ عـذراً .. لـم استطـع ايجـاد المطلـوب ☹️💔**")
+            await xsara_v.edit("**╮•⎚ عـذراً .. لـم استطـع ايجـاد المطلـوب ☹️💔**")
         else:
-            await zzzzl1l.delete()
+            await xsara_v.delete()
             await event.client.send_message(event.chat_id, response.message)
 

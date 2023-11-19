@@ -28,7 +28,7 @@ DEVZ = [
 #
 
 ZelzalPRO_cmd = (
-    "𓆩 [𝗦𝗼𝘂𝗿𝗰𝗲 𝗭𝗘𝗗𝗧𝗵𝗼𝗻 𝗖𝗼𝗻𝗳𝗶𝗴 - اوامـر الاذا؏ـــة](t.me/ZEDthon) 𓆪\n\n"
+    "𓆩 [𝗦𝗼𝘂𝗿𝗰𝗲 𝗭𝗘𝗗𝗧𝗵𝗼𝗻 𝗖𝗼𝗻𝗳𝗶𝗴 - اوامـر الاذا؏ـــة](t.me/xsara_v) 𓆪\n\n"
     "**⎞𝟏⎝** `.للكروبات`  / `.للمجموعات`\n"
     "**بالــࢪد ؏ــلى ࢪســالة نصيــه او وسـائــط تحتهــا نــص**\n"
     "**- لـ اذاعـة رسـالة او ميديـا لكـل المجموعـات اللي انت موجود فيهـا . .**\n\n\n"
@@ -44,7 +44,7 @@ ZelzalPRO_cmd = (
     "**⎞5⎝** `.زاجل`\n"
     "**بالــࢪد ؏ــلى ࢪســالة نصيــه او وسـائــط تحتهــا نــص**\n"
     " **- ارسـال رسـاله اذاعـة الى اشخاص محددة 🕊. .**\n\n"
-    "\n 𓆩 [𝙎𝙊𝙐𝙍𝘾𝞝 𝙕𝞝𝘿](t.me/ZedThon) 𓆪"
+    "\n 𓆩 [𝙎𝙊𝙐𝙍𝘾𝞝 𝑆𝞝𝐴](t.me/xsara_v) 𓆪"
 )
 
 
@@ -57,7 +57,7 @@ async def cmd(zelzallll):
 @zedub.zed_cmd(pattern=f"للكروبات(?: |$)(.*)")
 async def gcast(event):
     zedthon = event.pattern_match.group(1)
-    if zedthon: #Write Code By T.me/zzzzl1l
+    if zedthon: #Write Code By T.me/xsara_v
         await edit_or_reply(event, "**⎉╎بالـࢪد ؏ــلى ࢪسـالة او وسائـط**")
         return
     elif event.is_reply:
@@ -72,14 +72,14 @@ async def gcast(event):
         if x.is_group:
             chat = x.id
             try:
-                if zelzal.text: #Write Code By T.me/zzzzl1l
+                if zelzal.text: #Write Code By T.me/xsara_v
                     try:
                         await borg.send_message(chat, zelzal, link_preview=False)
                         done += 1
                     except BaseException:
                         er += 1
                 else:
-                    try: #Write Code By T.me/zzzzl1l
+                    try: #Write Code By T.me/xsara_v
                         await borg.send_file(
                             chat,
                             zelzal,
@@ -98,7 +98,7 @@ async def gcast(event):
 @zedub.zed_cmd(pattern=f"للمجموعات(?: |$)(.*)")
 async def gcast(event):
     zedthon = event.pattern_match.group(1)
-    if zedthon: #Write Code By T.me/zzzzl1l
+    if zedthon: #Write Code By T.me/xsara_v
         await edit_or_reply(event, "**⎉╎بالـࢪد ؏ــلى ࢪسـالة او وسائـط**")
         return
     elif event.is_reply:
@@ -113,14 +113,14 @@ async def gcast(event):
         if x.is_group:
             chat = x.id
             try:
-                if zelzal.text: #Write Code By T.me/zzzzl1l
+                if zelzal.text: #Write Code By T.me/xsara_v
                     try:
                         await borg.send_message(chat, zelzal, link_preview=False)
                         done += 1
                     except BaseException:
                         er += 1
                 else:
-                    try: #Write Code By T.me/zzzzl1l
+                    try: #Write Code By T.me/xsara_v
                         await borg.send_file(
                             chat,
                             zelzal,
@@ -139,7 +139,7 @@ async def gcast(event):
 @zedub.zed_cmd(pattern=f"للخاص(?: |$)(.*)")
 async def gucast(event):
     zedthon = event.pattern_match.group(1)
-    if zedthon: #Write Code By T.me/zzzzl1l
+    if zedthon: #Write Code By T.me/xsara_v
         await edit_or_reply(event, "**⎉╎بالـࢪد ؏ــلى ࢪسـالة او وسائـط**")
         return
     elif event.is_reply:
@@ -154,14 +154,14 @@ async def gucast(event):
         if x.is_user and not x.entity.bot:
             chat = x.id
             try:
-                if zelzal.text: #Write Code By T.me/zzzzl1l
+                if zelzal.text: #Write Code By T.me/xsara_v
                     try:
                         await borg.send_message(chat, zelzal, link_preview=False)
                         done += 1
                     except BaseException:
                         return
                 else:
-                    try: #Write Code By T.me/zzzzl1l
+                    try: #Write Code By T.me/xsara_v
                         await borg.send_file(
                             chat,
                             zelzal,
